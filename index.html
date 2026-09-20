@@ -40,12 +40,35 @@ background-color:rgba(60,60,60,1);
     width: 100% !important;
     height: 100% !important;
     overflow: hidden !important;
+    position: relative !important;
 }
 .template div[data-id="6676ADA5-9B73-4484-AADD-81F7A20ADEF8"][data-specific-kind="GALLERY"] .img-wrapper img,
 .template div[data-id="5F7DF745-0B39-443F-87FA-96346FDCDA9D"][data-specific-kind="GALLERY"] .img-wrapper img,
 .template div[data-id="BEEF998A-181A-4F67-9A49-B585CDFEAD8B"][data-specific-kind="GALLERY"] .img-wrapper img,
 .template div[data-id="3A6C2B2B-BFF2-444B-ADAB-816E8CE95835"][data-specific-kind="GALLERY"] .img-wrapper img,
 .template div[data-id="7B31AA2D-2D05-4501-9FCD-74EF597EB745"][data-specific-kind="GALLERY"] .img-wrapper img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+html body.desktopV div.template:not(.mobileV) div[data-specific-kind="GALLERY"][data-stretch="true"]:is(
+    [data-id="6676ADA5-9B73-4484-AADD-81F7A20ADEF8"],
+    [data-id="5F7DF745-0B39-443F-87FA-96346FDCDA9D"],
+    [data-id="BEEF998A-181A-4F67-9A49-B585CDFEAD8B"],
+    [data-id="3A6C2B2B-BFF2-444B-ADAB-816E8CE95835"],
+    [data-id="7B31AA2D-2D05-4501-9FCD-74EF597EB745"]
+) .Gallery_gallery__2AhdO .img-wrapper img,
+html body div.template.mobileV div[data-specific-kind="GALLERY"]:is(
+    [data-id="6676ADA5-9B73-4484-AADD-81F7A20ADEF8"],
+    [data-id="5F7DF745-0B39-443F-87FA-96346FDCDA9D"],
+    [data-id="BEEF998A-181A-4F67-9A49-B585CDFEAD8B"],
+    [data-id="3A6C2B2B-BFF2-444B-ADAB-816E8CE95835"],
+    [data-id="7B31AA2D-2D05-4501-9FCD-74EF597EB745"]
+) .img-wrapper img {
+    position: absolute !important;
+    inset: 0 !important;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
