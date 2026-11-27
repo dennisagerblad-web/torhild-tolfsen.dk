@@ -216,7 +216,7 @@
       .details-copy { clear: both; padding-top: 5px; }
       p { margin: 0 0 2px; }
       :is(button, summary, a):focus-visible { outline: 2px solid var(--cookie-blue); outline-offset: 2px; }
-      .settings { display: block; margin: 0 16px 0 auto; padding: 8px 0; min-height: 44px; border: 0; color: #333; background: #fff; font-size: 14px; text-decoration: underline; }
+      .settings { display: block; margin: 0 16px 0 auto; padding: 8px 4px; min-height: 44px; border: 0; color: #fff; background: transparent; font-size: 14px; text-decoration: underline; }
       section { max-width: 246px; border: 0; border-radius: 12px; }
       header { border: 0; color: #fff; background: transparent; }
       .cookie-icon { color: #fff; }
@@ -250,7 +250,7 @@
           </div>
         </details>
       </div>
-    </section><button type="button" class="settings" hidden>Statistikvalg</button>`;
+    </section><button type="button" class="settings" hidden>Cookiesinstillinger</button>`;
     banner=root.querySelector('section');preferenceButton=root.querySelector('.settings');
     root.querySelectorAll('[data-choice]').forEach(b=>b.addEventListener('click',()=>choose(b.dataset.choice)));
     preferenceButton.addEventListener('click',show);
